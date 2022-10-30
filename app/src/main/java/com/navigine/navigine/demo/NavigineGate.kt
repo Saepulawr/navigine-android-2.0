@@ -8,6 +8,8 @@ object NavigineGate {
 
     @JvmStatic
     fun getLoginIntent(context: Context): Intent {
+
         return Intent(context, LoginActivity::class.java)
     }
+
 }
