@@ -1,14 +1,13 @@
 plugins {
-    id 'com.android.application'
+//    id 'com.android.application'
     id 'maven-publish'
+    id 'com.android.library'
 }
-// apply plugin: 'com.android.application'
-
 android {
     compileSdkVersion 32
 
     defaultConfig {
-        applicationId "com.navigine.navigine.demo"
+//        applicationId "com.navigine.navigine.demo"
         minSdkVersion 23
         targetSdkVersion 32
         versionCode 3
