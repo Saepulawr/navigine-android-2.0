@@ -395,7 +395,7 @@ public class DebugFragment extends BaseFragment
     private void updateInfoGeneral(@Nullable Position position) {
         infoEntries.clear();
 
-        infoEntries.add(new String[]{getString(R.string.debug_info_field_1), String.format(Locale.ENGLISH, "%s", BuildConfig.VERSION_NAME)});
+        infoEntries.add(new String[]{getString(R.string.debug_info_field_1), String.format(Locale.ENGLISH, "%s", "BuildConfig.VERSION_NAME")});
         infoEntries.add(new String[]{getString(R.string.debug_info_field_2), String.format("%s", TEST_DEVICE_ID)});
 
         if (mLocation != null)

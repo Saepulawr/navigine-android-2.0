@@ -14,7 +14,7 @@ public class Constants {
     public static final String DL_QUERY_VENUE_ID       = "venue_id";
 
     // notifications
-    public static final String NOTIFICATION_CHANNEL_ID   = BuildConfig.APPLICATION_ID + ".PUSH";
+    public static final String NOTIFICATION_CHANNEL_ID   = "BuildConfig.APPLICATION_ID.PUSH";
     public static final String NOTIFICATION_CHANNEL_NAME = "NAVIGINE_PUSH";
     public static final int    NOTIFICATION_PUSH_ID      = 1;
     public static final int    REQUEST_CODE_NOTIFY       = 102;
