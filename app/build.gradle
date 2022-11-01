@@ -94,7 +94,7 @@ afterEvaluate {
         publications {
             // Creates a Maven publication called "release".
             release(MavenPublication) {
-                from components.release
+                from components.java
                 groupId = 'com.navigine'
                 artifactId = 'navigine-example'
                 version = '1.0'
