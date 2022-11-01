@@ -47,3 +47,16 @@ dependencies {
     //Barcode scan
     implementation "com.google.mlkit:barcode-scanning:$barcode_version"
 }
+afterEvaluate {
+    publishing {
+        publications {
+            // Creates a Maven publication called "release".
+            release(MavenPublication) {
+                from components.release
+                groupId = 'com.navigine'
+                artifactId = 'navigine-example'
+                version = '1.0'
+            }
+        }
+    }
+}

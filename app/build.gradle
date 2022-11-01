@@ -89,6 +89,19 @@ dependencies {
     //Shimmer
     implementation "com.facebook.shimmer:shimmer:$shimmer_version"
 }
+afterEvaluate {
+    publishing {
+        publications {
+            // Creates a Maven publication called "release".
+            release(MavenPublication) {
+                from components.release
+                groupId = 'com.navigine'
+                artifactId = 'navigine-example'
+                version = '1.0'
+            }
+        }
+    }
+}
 
 // task moveDebugApk(type: Copy) {
 //     from file("$projectDir/build/intermediates/apk/debug/app-debug.apk")
