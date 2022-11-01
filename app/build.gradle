@@ -3,7 +3,10 @@ plugins {
     id 'maven-publish'
     id 'com.android.library'
 }
+group = 'com.navigine'
+version = '1.0'
 android {
+
     compileSdkVersion 32
 
     defaultConfig {
